@@ -1,0 +1,67 @@
+.featured {
+	&-row {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 1.5rem;
+		border: 0.1rem solid rgba(0, 0, 0, 0.1);
+		border-radius: 0.5rem;
+		background: #f9f9f9;
+		padding: 2rem;
+		align-items: center;
+		margin: 1.5rem 0;
+	}
+	&-content {
+		flex: 1 1 40rem;
+		& > h3 {
+			font-size: 2.5rem;
+			color: $black;
+		}
+		& > p {
+			font-size: 1.5rem;
+			color: #666;
+			padding: 1rem 0;
+		}
+	}
+	&-stars > i {
+		font-size: 1.7rem;
+		color: $orange;
+		padding: 0.5rem 0;
+	}
+	&-price {
+		font-size: 2.5rem;
+		color: $black;
+		font-weight: bolder;
+		& span {
+			font-size: 1.5rem;
+			color: $orange;
+			text-decoration: line-through;
+		}
+	}
+}
+.featured .featured-row .image-container {
+	display: flex;
+	gap: 1.5rem;
+	align-items: center;
+	flex: 1 1 50rem;
+	& .small-image {
+		width: 20%;
+		& > img {
+			width: 100%;
+			padding: 1rem;
+			border: 0.1rem solid rgba(0, 0, 0, 0.3);
+			cursor: pointer;
+			&:hover {
+				background: #ccc;
+			}
+		}
+	}
+	& .big-image {
+		width: 80%;
+		& > img {
+			width: 100%;
+			&:hover {
+				transform: scale(1.05);
+			}
+		}
+	}
+}

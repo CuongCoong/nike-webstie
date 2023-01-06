@@ -1,0 +1,84 @@
+.heading {
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 4rem;
+	color: $black;
+	padding: 1rem;
+	& span {
+		text-transform: uppercase;
+		color: $orange;
+	}
+}
+.products-box-container {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1.5rem;
+}
+.products-box {
+	border: 0.1rem solid rgba(0, 0, 0, 0.1);
+	border-radius: 0.5rem;
+	text-align: center;
+	position: relative;
+	overflow: hidden;
+	background: #f9f9f9;
+	flex: 1 1 30rem;
+	& img {
+		height: 10rem;
+		transform: rotate(-35deg);
+		filter: drop-shadow(0.5rem 1rem rgba(0, 0, 0, 0.1));
+		margin: 8rem 2rem;
+	}
+	&:hover img {
+		transform: rotate(-35deg) scale(1.2);
+	}
+	&:hover .icon {
+		left: 1rem;
+	}
+}
+.products-content {
+	padding: 1.5rem;
+	& h3 {
+		color: $black;
+		font-size: 2.5rem;
+	}
+	& .price {
+		color: $black;
+		font-size: 2.5rem;
+		font-weight: bolder;
+		padding: 1rem 0;
+		& span {
+			color: $orange;
+			font-size: 1.5rem;
+			text-decoration: line-through;
+		}
+	}
+	& .products-stars {
+		padding: 1rem;
+		& i {
+			font-size: 1.7rem;
+			color: $orange;
+		}
+	}
+}
+.icon {
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	top: 0.5rem;
+	left: -10rem;
+	& a {
+		height: 4.5rem;
+		width: 5rem;
+		line-height: 4.5rem;
+		font-size: 2rem;
+		color: $black;
+		border: 0.1rem solid $black;
+		border-radius: 0.5rem;
+		background: $bg;
+		margin-top: 0.5rem;
+		&:hover {
+			background: $orange;
+			color: $bg;
+		}
+	}
+}
